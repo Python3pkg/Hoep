@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import unicode_literals
+
 
 from textwrap import dedent
 import unittest as ut
@@ -117,7 +117,7 @@ class ExtensionsTestCase(ut.TestCase):
         self.assertEqual(self.md(supplied, 'superscript'), expected)
     
     def test_tables(self):
-        supplied = dedent(u'''\
+        supplied = dedent('''\
             |  1  |  2  |  3  |
             | --- | --- | --- |
             |  X  |  X  |  O  |

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import unicode_literals
+
 
 import unittest as ut
 
@@ -82,7 +82,7 @@ class RenderFlagsTestCase(ut.TestCase):
     
     def test_skip_style(self):
         supplied = '<style type="text/css">* { content: \'stylin\\\'\'; }</style>'
-        expected = u'<style type="text/css">* { content: \'stylin\\\'\'; }</style>\n'
+        expected = '<style type="text/css">* { content: \'stylin\\\'\'; }</style>\n'
         
         self.assertEqual(self.md(supplied, 'skip_style'), expected)
     

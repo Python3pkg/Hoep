@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import unicode_literals
+
 
 from textwrap import dedent
 import unittest as ut
@@ -232,7 +232,7 @@ class CustomRendererTestCase(ut.TestCase):
         self.assertEqual(self.md(supplied, 'paragraph'), expected)
     
     def test_table(self):
-        supplied = dedent(u'''\
+        supplied = dedent('''\
             |  1  |  2  |  3  |
             | --- | --- | --- |
             |  X  |  X  |  O  |
